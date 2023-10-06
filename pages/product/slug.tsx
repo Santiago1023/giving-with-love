@@ -1,4 +1,5 @@
 import ShopLayout from '@/components/layouts/ShopLayout'
+import ProductSlideshow from '@/components/products/ProductSlideshow';
 import { initialData } from '@/database/products'
 import { Box, Button, Chip, Grid, Typography } from '@mui/material';
 import React from 'react'
@@ -10,7 +11,7 @@ const ProductPage = () => {
     <ShopLayout title={product.title} pageDescription={product.description}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={7}>
-          {/* Slideshow */}
+          <ProductSlideshow images={product.images}/>
         </Grid>
         <Grid item xs={12} sm={5}>
           <Box display='flex' flexDirection='column'>

@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import React, { FC, PropsWithChildren } from 'react'
 import Navbar from '../ui/Navbar';
+import {SideMenu} from '../ui/SideMenu';
 
 interface Props {
   title: string;
@@ -26,7 +27,7 @@ const ShopLayout:FC<PropsWithChildren<Props>> = ({children, title, pageDescripti
       <nav>
         <Navbar/>
       </nav>
-      {/* TODO: Sidebar */}
+      <SideMenu/>
       <main style={{
         margin: '80px auto',
         maxWidth: '1440px',

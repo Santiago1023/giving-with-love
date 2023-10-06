@@ -1,5 +1,4 @@
 
-import { Description } from '@mui/icons-material';
 import Head from 'next/head'
 import React, { FC, PropsWithChildren } from 'react'
 import Navbar from '../ui/Navbar';

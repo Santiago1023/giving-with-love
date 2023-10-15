@@ -3,8 +3,8 @@ import NextLink from 'next/link';
 import { SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material';
 const Navbar = () => {
   return (
-    <AppBar>
-        <Toolbar>
+    <AppBar className=''>
+        <Toolbar className=''>
             <NextLink href='/' passHref legacyBehavior>
                 <Link display='flex' alignItems='center'>
                     <Typography variant='h6'>Giving with love |</Typography>
@@ -35,7 +35,7 @@ const Navbar = () => {
 
             <Box flex={1}/>
 
-            <IconButton>
+            <IconButton className=''>
                 <SearchOutlined/>
             </IconButton>
 
